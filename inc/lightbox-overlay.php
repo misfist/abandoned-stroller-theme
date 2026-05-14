@@ -12,9 +12,9 @@ namespace Abandoned_Stroller;
 /**
  * Output the lightbox overlay HTML.
  *
- * The element starts hidden. data-wp-show removes the hidden attribute when
- * state.isOpen is true. All content is bound to global state, populated by
- * the openLightbox action defined in the JS store.
+ * The element starts hidden. data-wp-class--is-open toggles visibility via CSS.
+ * All content is bound to global state, populated by the openLightbox action.
+ * data-wp-on-document--keydown wires arrow key navigation and Escape to close.
  *
  * @return void
  */
@@ -29,6 +29,7 @@ function render_lightbox_overlay(): void {
 		data-wp-interactive="abandonedstroller"
 		data-wp-class--is-open="state.isOpen"
 		data-wp-bind--aria-hidden="!state.isOpen"
+		data-wp-on-document--keydown="actions.handleKeydown"
 		role="dialog"
 		aria-modal="true"
 		aria-label="<?php esc_attr_e( 'Image Lightbox', 'abandonedstroller' ); ?>"
@@ -42,7 +43,7 @@ function render_lightbox_overlay(): void {
 				class="lightbox__close"
 				data-wp-on--click="actions.closeLightbox"
 				aria-label="<?php esc_attr_e( 'Close lightbox', 'abandonedstroller' ); ?>"
-			>&times;</button>
+			><?php esc_html_e( 'Close', 'abandonedstroller' ); ?></button>
 
 			<figure class="lightbox__figure">
 				<img
@@ -81,6 +82,22 @@ function render_lightbox_overlay(): void {
 				><?php esc_html_e( 'View Post', 'abandonedstroller' ); ?></a>
 
 			</div>
+
+			<nav class="lightbox__nav" aria-label="<?php esc_attr_e( 'Post navigation', 'abandonedstroller' ); ?>">
+				<button
+					class="lightbox__prev"
+					data-wp-on--click="actions.prevPost"
+					aria-label="<?php esc_attr_e( 'Previous post', 'abandonedstroller' ); ?>"
+				>&larr;</button>
+
+				<span class="lightbox__count" data-wp-text="state.countLabel"></span>
+
+				<button
+					class="lightbox__next"
+					data-wp-on--click="actions.nextPost"
+					aria-label="<?php esc_attr_e( 'Next post', 'abandonedstroller' ); ?>"
+				>&rarr;</button>
+			</nav>
 
 		</div>
 

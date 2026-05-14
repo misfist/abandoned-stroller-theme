@@ -116,4 +116,34 @@
 	&__permalink {
 		display: none;
 	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: var( --wp--preset--spacing--30 );
+	}
+
+	&__prev,
+	&__next {
+		background: none;
+		border: none;
+		padding: 0;
+		color: var( --wp--preset--color--contrast-3 );
+		font-size: 1rem;
+		cursor: pointer;
+		transition: color 0.4s ease;
+
+		&:hover {
+			color: var( --wp--preset--color--contrast-2 );
+		}
+	}
+
+	&__count {
+		font-size: var( --wp--preset--font-size--x-small );
+		font-weight: 300;
+		color: var( --wp--preset--color--contrast-3 );
+		letter-spacing: 0.16em;
+	}
 }

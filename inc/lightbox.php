@@ -52,13 +52,16 @@ function get_post_lightbox_context( int $post_id ): array {
  */
 function init_lightbox_state(): void {
 	$state = array(
-		'isOpen'     => false,
-		'imageUrl'   => '',
-		'title'      => '',
-		'permalink'  => '',
-		'date'       => '',
-		'categories' => array(),
-		'tags'       => array(),
+		'isOpen'       => false,
+		'imageUrl'     => '',
+		'title'        => '',
+		'permalink'    => '',
+		'date'         => '',
+		'categories'   => array(),
+		'tags'         => array(),
+		'posts'        => array(),
+		'currentIndex' => 0,
+		'total'        => 0,
 	);
 
 	wp_interactivity_state( 'abandonedstroller', $state );
