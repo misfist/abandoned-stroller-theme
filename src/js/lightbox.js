@@ -16,7 +16,7 @@ function applyPostAtIndex( state, index ) {
 	state.currentIndex = index;
 }
 
-const { state } = store( 'abandonedstroller', {
+const { state } = store( 'abandoned-stroller', {
 	state: {
 		get countLabel() {
 			return ( state.currentIndex + 1 ) + ' / ' + state.total;

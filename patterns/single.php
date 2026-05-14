@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Single
- * Slug: abandonedstroller/single
+ * Slug: abandoned-stroller/single
  * Inserter: no
  */
 ?>
@@ -15,7 +15,7 @@
 
         <!-- wp:post-featured-image {"aspectRatio":"3/2","isLightbox":true} /-->
 
-        <!-- wp:pattern {"slug":"abandonedstroller/post-meta"} /-->
+        <!-- wp:pattern {"slug":"abandoned-stroller/post-meta"} /-->
 
         <!-- wp:post-content {"align":"full","layout":{"type":"constrained"}} /-->
 

@@ -80,11 +80,11 @@ function enqueue_script_modules(): void {
 	}
 
 	wp_register_script_module(
-		'abandonedstroller/lightbox',
+		'abandoned-stroller/lightbox',
 		get_stylesheet_directory_uri() . '/build/js/lightbox.js',
 		array( '@wordpress/interactivity' )
 	);
 
-	wp_enqueue_script_module( 'abandonedstroller/lightbox' );
+	wp_enqueue_script_module( 'abandoned-stroller/lightbox' );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_script_modules' );

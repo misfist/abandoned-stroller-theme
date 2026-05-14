@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Page
- * Slug: abandonedstroller/page
+ * Slug: abandoned-stroller/page
  * Inserter: true
  */
 ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post Grid
- * Slug: abandonedstroller/post-grid
+ * Slug: abandoned-stroller/post-grid
  * Categories: Posts
  * Blocks: core/query
  * Inserter: true
@@ -38,7 +38,7 @@
         <div class="wp-block-group wp-block-post-body">
             <!-- wp:post-title {"isLink":true} /-->
 
-            <!-- wp:pattern {"slug":"abandonedstroller/post-meta"} /-->
+            <!-- wp:pattern {"slug":"abandoned-stroller/post-meta"} /-->
         </div>
         <!-- /wp:group -->
     <!-- /wp:post-template -->
@@ -47,7 +47,7 @@
     <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
         <!-- wp:query-no-results -->
         <!-- wp:paragraph -->
-        <p><?php esc_html_e( 'Sorry, but nothing was found. Please try a search with different keywords.', 'abandonedstroller' ); ?></p>
+        <p><?php esc_html_e( 'Sorry, but nothing was found. Please try a search with different keywords.', 'abandoned-stroller' ); ?></p>
         <!-- /wp:paragraph -->
         <!-- /wp:query-no-results -->
     </div>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Home
- * Slug: abandonedstroller/home
+ * Slug: abandoned-stroller/home
  * Inserter: no
  */
 ?>
@@ -26,7 +26,7 @@
 <!-- wp:group {"metadata":{"name":"No Posts"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:query-no-results -->
 <!-- wp:paragraph -->
-<p><?php esc_html_e('Sorry, but nothing was found. Please try a search with different keywords.', 'abandonedstroller');?></p>
+<p><?php esc_html_e('Sorry, but nothing was found. Please try a search with different keywords.', 'abandoned-stroller');?></p>
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:group -->

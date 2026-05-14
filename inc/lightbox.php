@@ -64,7 +64,7 @@ function init_lightbox_state(): void {
 		'total'        => 0,
 	);
 
-	wp_interactivity_state( 'abandonedstroller', $state );
+	wp_interactivity_state( 'abandoned-stroller', $state );
 }
 add_action( 'wp_footer', __NAMESPACE__ . '\init_lightbox_state', 1 );
 
@@ -102,7 +102,7 @@ function inject_post_template_lightbox_context( string $block_content, array $bl
 		$post_id = (int) $matches[1];
 		$context = get_post_lightbox_context( $post_id );
 
-		$processor->set_attribute( 'data-wp-interactive', 'abandonedstroller' );
+		$processor->set_attribute( 'data-wp-interactive', 'abandoned-stroller' );
 		$processor->set_attribute( 'data-wp-context', wp_json_encode( $context ) );
 	}
 

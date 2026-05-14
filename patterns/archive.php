@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Archive
- * Slug: abandonedstroller/archive
+ * Slug: abandoned-stroller/archive
  * Inserter: no
  */
 ?>
@@ -13,7 +13,7 @@
 
     <!-- wp:term-description {"align":"wide"} /-->
 
-    <!-- wp:pattern {"slug":"abandonedstroller/post-grid"} /-->
+    <!-- wp:pattern {"slug":"abandoned-stroller/post-grid"} /-->
 
 </main>
 <!-- /wp:group -->

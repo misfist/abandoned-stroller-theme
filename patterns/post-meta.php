@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post Meta
- * Slug: abandonedstroller/post-meta
+ * Slug: abandoned-stroller/post-meta
  * Categories: Posts
  */
 ?>

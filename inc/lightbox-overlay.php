@@ -26,13 +26,13 @@ function render_lightbox_overlay(): void {
 	?>
 	<div
 		class="lightbox"
-		data-wp-interactive="abandonedstroller"
+		data-wp-interactive="abandoned-stroller"
 		data-wp-class--is-open="state.isOpen"
 		data-wp-bind--aria-hidden="!state.isOpen"
 		data-wp-on-document--keydown="actions.handleKeydown"
 		role="dialog"
 		aria-modal="true"
-		aria-label="<?php esc_attr_e( 'Image Lightbox', 'abandonedstroller' ); ?>"
+		aria-label="<?php esc_attr_e( 'Image Lightbox', 'abandoned-stroller' ); ?>"
 		aria-hidden="true"
 	>
 		<div class="lightbox__backdrop" data-wp-on--click="actions.closeLightbox"></div>
@@ -42,8 +42,8 @@ function render_lightbox_overlay(): void {
 			<button
 				class="lightbox__close"
 				data-wp-on--click="actions.closeLightbox"
-				aria-label="<?php esc_attr_e( 'Close lightbox', 'abandonedstroller' ); ?>"
-			><?php esc_html_e( 'Close', 'abandonedstroller' ); ?></button>
+				aria-label="<?php esc_attr_e( 'Close lightbox', 'abandoned-stroller' ); ?>"
+			><?php esc_html_e( 'Close', 'abandoned-stroller' ); ?></button>
 
 			<figure class="lightbox__figure">
 				<img
@@ -79,15 +79,15 @@ function render_lightbox_overlay(): void {
 					class="lightbox__permalink"
 					data-wp-bind--href="state.permalink"
 					href="#"
-				><?php esc_html_e( 'View Post', 'abandonedstroller' ); ?></a>
+				><?php esc_html_e( 'View Post', 'abandoned-stroller' ); ?></a>
 
 			</div>
 
-			<nav class="lightbox__nav" aria-label="<?php esc_attr_e( 'Post navigation', 'abandonedstroller' ); ?>">
+			<nav class="lightbox__nav" aria-label="<?php esc_attr_e( 'Post navigation', 'abandoned-stroller' ); ?>">
 				<button
 					class="lightbox__prev"
 					data-wp-on--click="actions.prevPost"
-					aria-label="<?php esc_attr_e( 'Previous post', 'abandonedstroller' ); ?>"
+					aria-label="<?php esc_attr_e( 'Previous post', 'abandoned-stroller' ); ?>"
 				>&larr;</button>
 
 				<span class="lightbox__count" data-wp-text="state.countLabel"></span>
@@ -95,7 +95,7 @@ function render_lightbox_overlay(): void {
 				<button
 					class="lightbox__next"
 					data-wp-on--click="actions.nextPost"
-					aria-label="<?php esc_attr_e( 'Next post', 'abandonedstroller' ); ?>"
+					aria-label="<?php esc_attr_e( 'Next post', 'abandoned-stroller' ); ?>"
 				>&rarr;</button>
 			</nav>
 
