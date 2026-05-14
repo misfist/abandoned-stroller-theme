@@ -64,6 +64,11 @@
 	a {
 		color: var( --wp--preset--color--contrast-2 );
 		text-decoration: none;
+
+		&:hover {
+			color: var( --wp--preset--color--contrast );
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -110,9 +115,13 @@
 				}
 			}
 
-			a {
-				color: var( --wp--preset--color--contrast );
+			.wp-block-post-title {
+				a {
+					color: var( --wp--preset--color--contrast );
+					text-decoration: underline;
+				}				
 			}
+
 		}
 
 		&.category-uncategorized {

@@ -1,16 +1,24 @@
+header.wp-block-template-part {
+	background-color: rgba( 0, 0, 0, 0.45 );
+
+	&:hover {
+		background-color: rgba( 0, 0, 0, 0.35 );
+	}
+}
+
 .wp-block-site-title {
 
 	a {
-		text-shadow: 0 1px 8px rgba( 0, 0, 0, 0.8 );
+		text-shadow: 0 1px 8px rgba( 0, 0, 0, 0.9 );
 		transition: color 0.4s ease;
 
 		&:hover {
 			color: var( --wp--preset--color--accent-1 );
+			text-decoration: none;
 		}
 	}
 }
 
 .wp-block-site-tagline {
 	letter-spacing: 0.22em;
-	// font-style: italic;
 }
