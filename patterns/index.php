@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: index
+ * Title: Index
  * Slug: abandonedstroller/index
  * Inserter: no
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: archive
+ * Title: Archive
  * Slug: abandonedstroller/archive
  * Inserter: no
  */

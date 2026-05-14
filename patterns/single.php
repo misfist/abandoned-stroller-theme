@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: single
+ * Title: Single
  * Slug: abandonedstroller/single
  * Inserter: no
  */
