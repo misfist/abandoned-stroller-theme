@@ -78,7 +78,7 @@
 	}
 
 	&__title {
-		font-size: var( --wp--preset--font-size--x-small );
+		font-size: var( --wp--preset--font-size--small );
 		font-weight: 300;
 		color: var( --wp--preset--color--contrast );
 		letter-spacing: 0.16em;
@@ -86,6 +86,7 @@
 		margin: 0;
 	}
 
+	&__caption,
 	&__meta {
 		display: flex;
 		flex-wrap: wrap;

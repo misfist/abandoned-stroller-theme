@@ -53,6 +53,7 @@ function render_lightbox_overlay(): void {
 					src=""
 					alt=""
 				/>
+				<figcaption class="lightbox__caption" data-wp-text="state.caption"></figcaption>
 			</figure>
 
 			<div class="lightbox__info">

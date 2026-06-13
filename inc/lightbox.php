@@ -29,12 +29,14 @@ function map_term_to_context_item( \WP_Term $term ): array {
  */
 function get_post_lightbox_context( int $post_id ): array {
 	$image_url  = get_the_post_thumbnail_url( $post_id, 'large' ) ?: '';
+	$image_id   = get_post_thumbnail_id( $post_id );
 	$categories = array_map( __NAMESPACE__ . '\map_term_to_context_item', get_the_category( $post_id ) );
 	$tags       = array_map( __NAMESPACE__ . '\map_term_to_context_item', get_the_tags( $post_id ) ?: array() );
 
 	return array(
 		'imageUrl'   => $image_url,
 		'title'      => html_entity_decode( get_the_title( $post_id ), ENT_QUOTES | ENT_HTML5, 'UTF-8' ),
+		'caption'    => get_the_excerpt( $post_id ),
 		'permalink'  => get_permalink( $post_id ),
 		'date'       => get_the_date( '', $post_id ),
 		'categories' => $categories,
@@ -55,6 +57,7 @@ function init_lightbox_state(): void {
 		'isOpen'       => false,
 		'imageUrl'     => '',
 		'title'        => '',
+		'caption'      => '',
 		'permalink'    => '',
 		'date'         => '',
 		'categories'   => array(),

@@ -11,6 +11,7 @@ function applyPostAtIndex( state, index ) {
 	state.title        = post.title;
 	state.permalink    = post.permalink;
 	state.date         = post.date;
+	state.caption      = post.caption;
 	state.categories   = post.categories;
 	state.tags         = post.tags;
 	state.currentIndex = index;
