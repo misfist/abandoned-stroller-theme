@@ -1,5 +1,5 @@
 .wp-block-navigation {
-	font-size: 0.78rem;
+	font-size: var( --wp--preset--font-size--medium );
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 
@@ -12,4 +12,16 @@
 			color: var( --wp--preset--color--contrast-2 );
 		}
 	}
+}
+
+.wp-block-query-pagination {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	max-width: 100%;
+
+	.wp-block-query-pagination-numbers {
+		display: flex;
+		gap: .5rem;
+	}
+
 }
