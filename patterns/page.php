@@ -5,8 +5,6 @@
  * Inserter: true
  */
 ?>
-<!-- wp:template-part {"slug":"header"} /-->
-
 <!-- wp:group {"tagName":"main","className":"main-content","style":{"spacing":{"padding":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group main-content" style="padding-top:var(--wp--preset--spacing--60)">
     <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
@@ -21,5 +19,3 @@
     <!-- /wp:group -->
 </main>
 <!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer"} /-->
